@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in & Sign-up Page</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <div class="container" id="content01">
+        <div class="img-slider">
+            <h2>Welcome to sustain sphere</h2>
+            <p>Attain knowledge with joy </p>
+            <img height="300" width="150" src="https://th.bing.com/th/id/OIP.Pis3HmaacHM94EaD8QeNXAHaH_?rs=1&pid=ImgDetMain" alt="img">
+        </div>
+        <div class="content">
+            <h2>Get Started</h2>
+            <p>Dont have an account? <a href="index.html" id="login">Sign Up</a></p>
+            <form id="form" onsubmit="validateCredentials(event)">
+                <label for="email" id="elabel">Email</label> <br>
+                <input type="email" id="eemail" placeholder="Enter MAIL" autocomplete="off" required> <br>
+                <label for="password" id="plabel">Password</label> <br>
+                <input type="password" name="password" placeholder="Enter password" id="lpassword" required> <br>
+                <button type="submit" id="btn">Sign In</button>
+            </form>
+        </div>
+
+        <script>
+            // Sample valid credentials (replace with your actual credentials)
+            const validCredentials = {
+                email: 'AlgorithmicAllies@svecw.edu.in',
+                password: '123'
+            };
+
+            function validateCredentials(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get user input
+                const enteredEmail = document.getElementById('eemail').value;
+                const enteredPassword = document.getElementById('lpassword').value;
+
+                // Check if entered credentials match the valid credentials
+                if (enteredEmail === validCredentials.email && enteredPassword === validCredentials.password) {
+                    // Correct credentials - Redirect to chat.html or perform other actions
+                    window.location.href = 'chat.html';
+                } else {
+                    // Incorrect credentials - Display an error message or take appropriate action
+                    alert('Incorrect credentials. Please try again.');
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

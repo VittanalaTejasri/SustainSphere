@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height:1000px;
+            display: flex;
+            flex-direction:column;
+            background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_52683-76100.jpg'); /* Replace 'your-background-image.jpg' with the actual image file path or URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent black background for better visibility of text */
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        section {
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .component {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better readability of content */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        #logoutBtn {
+            background-color: #fff;
+            color: #333;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="profile-section">
+            <a href="profile.html" class="profile-btn"><span class="glyphicon glyphicon-user"></span> Profile</a>
+            
+        </div>
+        <div>
+            <h1>Welcome</h1>
+        </div>
+        
+        <a href="signin.html"> <button id="logoutBtn"  onclick="logout()">Logout</button></a>
+    </header>
+
+    <section>
+        
+        <div class="component"><a href="m3.html">
+            <h2>Modules</h2></a>
+            <!-- Add modules content here -->
+        </div>
+
+        <div class="component"><a href="badges.html">
+            <h2>Badges</h2></a>
+            <!-- Add badges content here -->
+        </div>
+    </section>
+
+   
+</body>
+</html>

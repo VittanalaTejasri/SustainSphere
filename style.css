@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_52683-76100.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 300px;
+    border-radius: 20px;
+}
+
+.img-slider {
+    width: 300px;
+    height: 300px;
+    border-right: 2px solid #fad6ef58;
+    border-radius: 20px;
+    background-color: green;
+}
+
+.img-slider h2 {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+}
+
+.img-slider p {
+    width: 150px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 700;
+    font-size: 15px;
+    color:white;
+}
+
+.container .img-slider img {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.content {
+    position: absolute;
+    top: 10px;
+    right: 110px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Lexend', sans-serif;
+    padding: 20px 0px 10px 0px;
+    color: #1FAB89;
+}
+
+.content p {
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    padding: 10px 0px;
+    color: #777;
+}
+
+.content p a {
+    text-decoration: none;
+    color: #1FAB89;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border: none;
+}
+
+#form {
+    padding-top: 20px;
+}
+
+#form label {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 10px 0px;
+    color: #999c9a;
+}
+
+#form input {
+    border: none;
+    border-bottom: 3px solid #1FAB89;
+    width: 350px;
+    margin: 10px 0px;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px 0px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+}
+
+#btn {
+    text-align: center;
+    padding: 10px 60px;
+    position: relative;
+    left: 80px;
+    color: #fff;
+    background-color: #1FAB89;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#btn1 {
+    text-align: center;
+    padding: 10px 60px;
+    position: relative;
+    left: 80px;
+    color: #fff;
+    background-color: #1FAB89;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.other {
+    padding: 10px 0px;
+}
+
+.other h3 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons img {
+    width: 15%;
+    margin: 5px 10px;
+}
+
+.display {
+    display: none;
+    animation-delay: 8s;
+}
+
+.sign-img {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Add your responsive styles here */
+}
+
+@media screen and (max-width: 768px) {
+    /* Add your responsive styles here */
+}
+
+@media screen and (max-width: 425px) {
+    /* Add your responsive styles here */
+}
+
+@media screen and (max-width: 375px) {
+    /* Add your responsive styles here */
+}
+
+@media screen and (max-width: 320px) {
+    /* Add your responsive styles here */
+}

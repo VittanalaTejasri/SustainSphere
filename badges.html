@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height:1000px;
+            display: flex;
+            flex-direction:column;
+            background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_52683-76100.jpg'); /* Replace 'your-background-image.jpg' with the actual image file path or URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            color: #fff;
+        }
+        h1 {
+            margin: 0;
+        }
+        .header-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            color: #333;
+        }
+        .congratulations {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #4caf50;
+        }
+        .badge-count {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Badges</h1>
+        <div class="header-buttons">
+			<button onclick="navigateToModules()"><a href="chat.html">Home</a></button>
+            <button onclick="navigateToProfile()"><a href="profile.html">Profile</a></button>
+            <button onclick="navigateToModules()"><a href="m3.html">Modules</a></button>
+			
+        </div>
+    </header>
+
+    <section>
+        <div class="congratulations">Congratulations!</div>
+        <br><br>
+        <label class="badge-count">Number of Badges Earned: 10</label>
+        <!-- Add badge images or content here --> <br><br> <br><br>
+    </section>
+
+    
+</body>
+</html>
